@@ -1,4 +1,4 @@
-# BuilderLOCAL
+# Construtor offline / Jogos MotivAção - GEGRADI
 
 Repositório para projeto de Builder Local para jogos na plataforma GEGRADI - MotivAção.
 
