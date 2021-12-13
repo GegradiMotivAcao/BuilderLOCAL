@@ -1,0 +1,5 @@
+Assets/Resources/backgrounds\1629768710_fundopraia.jpg;0;0;
+Assets/Resources/objetos\1629768798_dogue.png;1;0;
+Assets/Resources/vegetacao\1629768726_arvrê.png;2;0;
+Assets/Resources/objetos\1629768798_dogue.png;1;0;
+Assets/Resources/vegetacao\1629768726_arvrê.png;2;0;
