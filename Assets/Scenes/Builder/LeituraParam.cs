@@ -68,7 +68,9 @@ public class LeituraParam : MonoBehaviour
 
     	foreach(string line in eachLine)
 		{   
-             
+            if (line == ""){
+                break;
+            }
     	  	string[] leitura = line.Split(';');
  
             if (arq)
@@ -82,7 +84,7 @@ public class LeituraParam : MonoBehaviour
 
             }
 
-            if(int.Parse(leitura[1]) == 0){ //Caso seja o BACKGROUND
+            if( int.Parse(leitura[1]) == 0 ){ //Caso seja o BACKGROUND
                 Fundo = Sprite.Create( tex, new Rect(0, 0, tex.width, tex.height), new Vector2(tex.width/2, tex.height/2) );
                LocalFundo.GetComponent<Image>().sprite = Fundo;
                 
@@ -116,11 +118,12 @@ public class LeituraParam : MonoBehaviour
 
         foreach(GameObject botao in BotoesObjetos) // Se não possuir imagem associada não da display
         {  
-            if(botao.transform.GetChild(0).GetComponent<Image>().sprite == null){
+            if(botao.transform.GetChild(0).GetComponent<DragMeMenu>().spot == null){
+                Debug.Log("spot nulo");
                 botao.SetActive(false);
             }
         }
-        
+
         foreach(GameObject botao in BotoesVegetacao) // Se não possuir imagem associada não da display
         {  
             if(botao.transform.GetChild(0).GetComponent<Image>().sprite == null){
