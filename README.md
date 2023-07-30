@@ -1,4 +1,4 @@
-# Construtor offline / Jogos MotivAção - GEGRADI
+# Projeto Unity para Construtor / Jogos MotivAção - GEGRADI
 
 Repositório para projeto de Builder Local para jogos na plataforma GEGRADI - MotivAção.
 
@@ -12,6 +12,5 @@ Repositório para projeto de Builder Local para jogos na plataforma GEGRADI - Mo
 <li> <b>IMPORTANTE:</b>As imagens de objeto ou vegetação devem ter tamanho 1366 x 768 px, fundo transparante e o elemento deve estar centralizado</li>
 <li>Adicione as imagens de vegetação, .png ou .jpg na pasta do projeto: <b>Assets > Resources > vegetação </b> </li>
 <li>Adicione as imagens de objetos, .png ou .jpg na pasta do projeto: <b>Assets > Resources > objetos </b> </li>
-<li>Execute o script python via cmd/prompt de comando: <b>python builder.py </b></li>
 <li>O executável gerado estará na pasta: <b>EXECUTAVEL</b> </li>
 </ul>
