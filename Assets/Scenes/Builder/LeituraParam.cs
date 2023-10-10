@@ -78,7 +78,7 @@ public class LeituraParam : MonoBehaviour
                 Sprite loco = Resources.Load(leitura[0].ToString(), typeof(Sprite)) as Sprite;
 
                 Debug.Log(leitura[0].ToString());
-                var lido = leitura[0].TrimEnd('.', 'j', 'p', 'n', 'g'); // good luck, have fun
+                var lido = leitura[0].TrimEnd('.', 'j', 'p',  'n', 'g'); // good luck, have fun
                 Debug.Log("Cortado: " + lido);
 				tex = Resources.Load<Texture2D>(lido);
 

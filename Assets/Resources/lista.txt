@@ -1,3 +1,17 @@
-backgrounds\1629768710_fundopraia.jpg;0;0;
-objetos\1629768798_dogue.png;1;0;
-vegetacao\1629768726_arv.png;2;0;
+objetos\palette.png;1;0
+backgrounds\palette.png;0;0
+backgrounds\bright1-demo_0.png;0;0
+objetos\palette.png;1;0
+backgrounds\bright1-demo_0.png;0;0
+backgrounds\palette.png;0;0
+backgrounds\bright1-demo_0.png;0;0
+objetos\palette.png;1;0
+backgrounds\bright1-demo_0.png;0;0
+backgrounds\bright1-demo_0.png;0;0
+objetos\palette.png;1;0
+backgrounds\bright1-demo_0.png;0;0
+objetos\palette.png;1;0
+backgrounds\bright1-demo_0.png;0;0
+objetos\palette.png;1;0
+backgrounds\DALL·E 2023-10-06 14.07.16 - Vector illustration with bold lines of a bibliotecarian sitting on a ladder, reaching out for a book on a high shelf. The library around is vast with .png;0;0
+objetos\DALL·E 2023-10-10 05.08.45 - Cartoon illustration of a mini boss lacaio villain for a rogue-like RPG. This burly minion boasts a hefty build and is encased in a thick, robust armo.png;1;0
