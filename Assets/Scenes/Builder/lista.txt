@@ -1,2 +1,3 @@
 1629239505_presetm4.jpg;1;2;Assets/Resource/1629239505_presetm4.jpg 
 1629243461_fundo.jpg;0;0;Assets/Resource/1629243461_fundo.jpg 
+1629768798_dogue.png;1;2;Assets/Resource/objetos/1629768798_dogue.png

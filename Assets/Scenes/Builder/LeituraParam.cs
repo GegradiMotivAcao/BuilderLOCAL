@@ -78,7 +78,8 @@ public class LeituraParam : MonoBehaviour
                 Sprite loco = Resources.Load(leitura[0].ToString(), typeof(Sprite)) as Sprite;
 
                 Debug.Log(leitura[0].ToString());
-                var lido = leitura[0].TrimEnd('.', 'j', 'p',  'n', 'g'); // good luck, have fun
+                //se é idiota mas funciona ...
+                var lido = leitura[0].TrimEnd('.', 'j', 'J', 'p','P', 'n', 'N', 'g','G'); // good luck, have fun 
                 Debug.Log("Cortado: " + lido);
 				tex = Resources.Load<Texture2D>(lido);
 
@@ -97,9 +98,10 @@ public class LeituraParam : MonoBehaviour
                 SpritesBotoes.Add(bt);
 
                 //Para imagens com local específico
-                BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<DragMeMenu>().spot = GSs[int.Parse(leitura[2])]; //atribui ao botão qual seu GameSpot referente
-                BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<Image>().sprite = SpritesBotoes[i];
-                GSs[int.Parse(leitura[2])].GetComponent<DropMeMenu>().respectiveImage[0] = BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).gameObject;//atribui ao GameSpot qual seu botão/imagem referente
+                //BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<DragMeMenu>().spot = GSs[int.Parse(leitura[2])]; //atribui ao botão qual seu GameSpot referente
+                //BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<Image>().sprite = SpritesBotoes[i];
+                //GSs[int.Parse(leitura[2])].GetComponent<DropMeMenu>().respectiveImage[0] = BotoesObjetos[int.Parse(leitura[2])].transform.GetChild(0).gameObject;//atribui ao GameSpot qual seu botão/imagem referente
+                BotoesObjetos[i].transform.GetChild(0).GetComponent<Image>().sprite = SpritesBotoes[i]; //adiciona sequencialmente as imagens no vetor de botões
                 i +=1;
             }
             
@@ -108,17 +110,17 @@ public class LeituraParam : MonoBehaviour
                 SpritesBotoes.Add(bt);
 
                 //Para imagens com local específico
-                BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<DragMeMenu>().spot = GSs[int.Parse(leitura[2])]; //atribui ao botão qual seu GameSpot referente
-                BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<Image>().sprite = SpritesBotoes[i];
-                GSs[int.Parse(leitura[2])].GetComponent<DropMeMenu>().respectiveImage[0] = BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).gameObject;//atribui ao GameSpot qual seu botão/imagem referente
-                i +=1;
+               // BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<DragMeMenu>().spot = GSs[int.Parse(leitura[2])]; //atribui ao botão qual seu GameSpot referente
+                //BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).GetComponent<Image>().sprite = SpritesBotoes[i];
+                //GSs[int.Parse(leitura[2])].GetComponent<DropMeMenu>().respectiveImage[0] = BotoesVegetacao[int.Parse(leitura[2])].transform.GetChild(0).gameObject;//atribui ao GameSpot qual seu botão/imagem referente
+                //i +=1;
             }
 
 		}
 
         foreach(GameObject botao in BotoesObjetos) // Se não possuir imagem associada não da display
         {  
-            if(botao.transform.GetChild(0).GetComponent<DragMeMenu>().spot == null){
+            if(botao.transform.GetChild(0).GetComponent<Image>().sprite == null){ //botao.transform.GetChild(0).GetComponent<DragMeMenu>().spot == null
                 Debug.Log("spot nulo");
                 botao.SetActive(false);
             }
