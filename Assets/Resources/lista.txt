@@ -1,6 +1,0 @@
-objetos\palette.png;1;0
-objetos\1629768798_dogue.png;1;0
-backgrounds\bright1-demo_0.png;0;0
-objetos\IMG_0116.JPG;1;0
-objetos\IMG_0113.JPG;1;0
-objetos\xS7JDVksA8U.jpg;1;0
